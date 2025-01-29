@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f0eb; /* Soft nude background */
+    color: #4a5a4f; /* Darker sage text color */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #4a5a4f;
+}
+
+.hero {
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(150, 150, 150, 0.3);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.cta-button {
+    background-color: #A4B88C; /* Sage color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #A4B88C;
+    color: #ffcf97; /* Gold accent */
+}
+
+.rsvp, .contact, .details, .registry, .gallery {
+    padding: 20px;
+}
+
+form input, form textarea, form select, .registry-item {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.registry-item:hover {
+    background-color: #A4B88C; /* Sage accent */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+button[type="submit"] {
+    background-color: #A4B88C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffcf97; /* Gold hover */
+}
